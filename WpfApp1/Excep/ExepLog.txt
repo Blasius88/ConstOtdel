@@ -1,0 +1,82 @@
+﻿0| System.IO.FileNotFoundException: Could not load file or assembly 'office, Version=15.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c'. Не удается найти указанный файл.
+File name: 'office, Version=15.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c'
+   at ConstOtdel.DownloadFiles.DownLoadExelFile()
+   at ConstOtdel.MainWindow.MenuItem_Click_Select_a_file(Object sender, RoutedEventArgs e) in D:\программирование\WPF\Program Files\ConstOtdel\ConstOtdel\MainWindow.xaml.cs:line 39
+
+| 04.01.2023 00:20:28| 
+6| System.IO.FileNotFoundException: Could not load file or assembly 'office, Version=15.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c'. Не удается найти указанный файл.
+File name: 'office, Version=15.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c'
+   at ConstOtdel.DownloadFiles.DownLoadExelFile()
+   at ConstOtdel.MainWindow.MenuItem_Click_Select_a_file(Object sender, RoutedEventArgs e) in D:\программирование\WPF\Program Files\ConstOtdel\ConstOtdel\MainWindow.xaml.cs:line 39
+
+| 04.01.2023 00:20:41| 
+12| System.IO.FileNotFoundException: Could not load file or assembly 'office, Version=15.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c'. Не удается найти указанный файл.
+File name: 'office, Version=15.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c'
+   at ConstOtdel.DownloadFiles.DownLoadExelFile()
+   at ConstOtdel.MainWindow.MenuItem_Click_Select_a_file(Object sender, RoutedEventArgs e) in D:\программирование\WPF\Program Files\ConstOtdel\ConstOtdel\MainWindow.xaml.cs:line 39
+
+| 04.01.2023 00:47:44| 
+18| System.IO.FileNotFoundException: Could not load file or assembly 'office, Version=15.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c'. Не удается найти указанный файл.
+File name: 'office, Version=15.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c'
+   at ConstOtdel.DownloadFiles.DownLoadExelFile()
+   at ConstOtdel.MainWindow.MenuItem_Click_Select_a_file(Object sender, RoutedEventArgs e) in D:\программирование\WPF\Program Files\ConstOtdel\ConstOtdel\MainWindow.xaml.cs:line 39
+
+| 04.01.2023 00:47:47| 
+24| System.IO.FileNotFoundException: Could not load file or assembly 'office, Version=15.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c'. Не удается найти указанный файл.
+File name: 'office, Version=15.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c'
+   at ConstOtdel.DownloadFiles.DownLoadExelFile()
+   at ConstOtdel.MainWindow.MenuItem_Click_Select_a_file(Object sender, RoutedEventArgs e) in D:\программирование\WPF\Program Files\ConstOtdel\ConstOtdel\MainWindow.xaml.cs:line 39
+
+| 04.01.2023 00:47:51| 
+30| System.IO.FileNotFoundException: Could not load file or assembly 'office, Version=15.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c'. Не удается найти указанный файл.
+File name: 'office, Version=15.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c'
+   at ConstOtdel.DownloadFiles.DownLoadExelFile()
+   at ConstOtdel.MainWindow.MenuItem_Click_Select_a_file(Object sender, RoutedEventArgs e) in D:\программирование\WPF\Program Files\ConstOtdel\ConstOtdel\MainWindow.xaml.cs:line 39
+
+| 04.01.2023 00:48:09| 
+36| System.IO.FileNotFoundException: Could not load file or assembly 'office, Version=15.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c'. Не удается найти указанный файл.
+File name: 'office, Version=15.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c'
+   at ConstOtdel.DownloadFiles.DownLoadExelFile()
+   at ConstOtdel.MainWindow.MenuItem_Click_Select_a_file(Object sender, RoutedEventArgs e) in D:\программирование\WPF\Program Files\ConstOtdel\ConstOtdel\MainWindow.xaml.cs:line 39
+
+| 04.01.2023 00:49:13| 
+42| System.IO.FileNotFoundException: Could not load file or assembly 'office, Version=15.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c'. Не удается найти указанный файл.
+File name: 'office, Version=15.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c'
+   at ConstOtdel.DownloadFiles.DownLoadExelFile()
+   at ConstOtdel.MainWindow.MenuItem_Click_Select_a_file(Object sender, RoutedEventArgs e) in D:\программирование\WPF\Program Files\ConstOtdel\ConstOtdel\MainWindow.xaml.cs:line 39
+
+| 04.01.2023 00:49:46| 
+48| System.IO.FileNotFoundException: Could not load file or assembly 'office, Version=15.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c'. Не удается найти указанный файл.
+File name: 'office, Version=15.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c'
+   at ConstOtdel.DownloadFiles.DownLoadExelFile()
+   at ConstOtdel.MainWindow.MenuItem_Click_Select_a_file(Object sender, RoutedEventArgs e) in D:\программирование\WPF\Program Files\ConstOtdel\ConstOtdel\MainWindow.xaml.cs:line 39
+
+| 04.01.2023 00:50:34| 
+54| System.IO.FileNotFoundException: Could not load file or assembly 'office, Version=15.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c'. Не удается найти указанный файл.
+File name: 'office, Version=15.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c'
+   at ConstOtdel.DownloadFiles.DownLoadExelFile()
+   at ConstOtdel.MainWindow.MenuItem_Click_Select_a_file(Object sender, RoutedEventArgs e) in D:\программирование\WPF\Program Files\ConstOtdel\ConstOtdel\MainWindow.xaml.cs:line 39
+
+| 04.01.2023 00:50:52| 
+60| Microsoft.CSharp.RuntimeBinder.RuntimeBinderException: Cannot convert null to "int" because it is a non-nullable value type
+   в CallSite.Target(Closure , CallSite , Object )
+   в System.Dynamic.UpdateDelegates.UpdateAndExecute1[T0,TRet](CallSite site, T0 arg0)
+   в WpfApp1.DownloadFiles.DownLoadExelFile() в D:\программирование\WPF\Program Files\ComstrOtdelWPF\WpfApp1\WpfApp1\DownloadFiles.cs:строка 34| 04.01.2023 20:41:29| 
+64| Microsoft.CSharp.RuntimeBinder.RuntimeBinderException: Cannot convert null to "int" because it is a non-nullable value type
+   в CallSite.Target(Closure , CallSite , Object )
+   в WpfApp1.DownloadFiles.DownLoadExelFile() в D:\программирование\WPF\Program Files\ComstrOtdelWPF\WpfApp1\WpfApp1\DownloadFiles.cs:строка 34| 04.01.2023 20:42:12| 
+67| System.NullReferenceException: Ссылка на объект не указывает на экземпляр объекта.
+   в WpfApp1.DownloadFiles.DownLoadExelFile() в D:\программирование\WPF\Program Files\ComstrOtdelWPF\WpfApp1\WpfApp1\DownloadFiles.cs:строка 41| 04.01.2023 20:43:46| 
+69| System.Runtime.InteropServices.COMException (0x800A03EC): К сожалению, нам не удалось найти файл System.Windows.Controls.TextBlock. Возможно, он был перемещен, переименован или удален?
+   в Microsoft.Office.Interop.Excel.Workbooks.Open(String Filename, Object UpdateLinks, Object ReadOnly, Object Format, Object Password, Object WriteResPassword, Object IgnoreReadOnlyRecommended, Object Origin, Object Delimiter, Object Editable, Object Notify, Object Converter, Object AddToMru, Object Local, Object CorruptLoad)
+   в WpfApp1.DownloadFiles.DownLoadExelFile(String ExcelFilePath) в D:\программирование\WPF\Program Files\ComstrOtdelWPF\WpfApp1\WpfApp1\DownloadFiles.cs:строка 24| 04.01.2023 21:23:31| 
+72| System.Runtime.InteropServices.COMException (0x80010001): Вызов был отклонен. (Исключение из HRESULT: 0x80010001 (RPC_E_CALL_REJECTED))
+   в System.Runtime.InteropServices.Marshal.ThrowExceptionForHRInternal(Int32 errorCode, IntPtr errorInfo)
+   в System.Dynamic.ComRuntimeHelpers.CheckIfMissingTypeInfoIsExpected(Int32 hresult, Boolean throwIfMissingExpectedTypeInfo)
+   в System.Dynamic.ComRuntimeHelpers.GetITypeInfoFromIDispatch(IDispatch dispatch, Boolean throwIfMissingExpectedTypeInfo)
+   в System.Dynamic.IDispatchComObject.EnsureScanDefinedMethods()
+   в CallSite.Target(Closure , CallSite , ComObject )
+   в CallSite.Target(Closure , CallSite , Object )
+   в WpfApp1.DownloadFiles.Downloud_Hardware_Suppliers(String excel_file_path) в D:\программирование\WPF\Program Files\ComstrOtdelWPF\WpfApp1\WpfApp1\DownloadFiles.cs:строка 87| 05.01.2023 00:00:53| 
+80| System.NullReferenceException: Ссылка на объект не указывает на экземпляр объекта.
+   в WpfApp1.DownloadFiles.Downloud_Hardware_Suppliers(String excel_file_path) в D:\программирование\WPF\Program Files\ComstrOtdelWPF\WpfApp1\WpfApp1\DownloadFiles.cs:строка 88| 05.01.2023 00:49:19| 
