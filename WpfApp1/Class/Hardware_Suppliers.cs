@@ -8,10 +8,16 @@ namespace WpfApp1
 {
     public class Hardware_Suppliers
     {
+
         /// <summary>
-        /// название поcтавщика 
+        /// Id фурнитуры 
         /// </summary>
-        public string Supplier_Name { get; set; }  // название поставщика 
+        public int ID { get; set; }
+        
+        /// <summary>
+        /// id поcтавщика 
+        /// </summary>
+        public int Supplier_Name { get; set; }  // название поставщика 
 
         /// <summary>
         /// название фурнитуры 
@@ -23,13 +29,14 @@ namespace WpfApp1
         /// </summary>
         public string Description { get; set; } 
         
-
         /// <summary>
         /// Цвет 
         /// </summary>
         public string Color { get; set; }
         
-
+        /// <summary>
+        /// Список фурнитуры 
+        /// </summary>
         public static List<Hardware_Suppliers> list_hardware_s = new List<Hardware_Suppliers>();
 
     }

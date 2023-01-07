@@ -71,5 +71,95 @@ namespace WpfApp1
         {
 
         }
+
+        private void Hardware_Checked(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void Hardware_Unchecked(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void Dye_Checked(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void Dye_Unchecked(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void Veneer_Checked(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void Veneer_Unchecked(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void Aluminum_frame_Checked(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void Aluminum_frame_Unchecked(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void Glass_Checked(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void Glass_Unchecked(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void Tree_Checked(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void Tree_Unchecked(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void Soft_element_Checked(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void Soft_element_Unchecked(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void compartment_doors_Checked(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void compartment_doors_Unchecked(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void metal_frame_Checked(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void metal_frame_Unchecked(object sender, RoutedEventArgs e)
+        {
+
+        }
     }
 }

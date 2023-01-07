@@ -23,5 +23,25 @@ namespace WpfApp1
         {
             InitializeComponent();
         }
+
+        /// <summary>
+        /// Добавить еденицу фурнитуры 
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void add_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        /// <summary>
+        /// закрыть окно 
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void Cancel_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
     }
 }

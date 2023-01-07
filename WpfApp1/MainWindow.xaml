@@ -75,9 +75,82 @@
                     <RowDefinition Height="*"/>
                     <RowDefinition Height="*"/>
                     <RowDefinition Height="*"/>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="*"/>
                 </Grid.RowDefinitions>
                 <Grid Grid.Row="0">
-                    <Button Content="Создать список фурнитуры" 
+                    <CheckBox x:Name="Hardware" 
+                              Content="Фурнитура"
+                              Checked="Hardware_Checked"
+                              Unchecked="Hardware_Unchecked"
+                              Style="{StaticResource Checked}"/>
+                </Grid>
+                <Grid Grid.Row="1">
+                    <CheckBox x:Name="Dye"
+                              Content="Краска"
+                              Checked="Dye_Checked"
+                              Unchecked="Dye_Unchecked"
+                              Style="{StaticResource Checked}"/>
+                </Grid>
+                <Grid Grid.Row="2">
+                    <CheckBox x:Name="Veneer"
+                              Content="Шпон"
+                              VerticalAlignment="Center"
+                              Checked="Veneer_Checked"
+                              Unchecked="Veneer_Unchecked"
+                              Style="{StaticResource Checked}"/>
+                </Grid>
+                <Grid Grid.Row="3">
+                    <CheckBox x:Name="Aluminum_frame"
+                              Content="Алюминевая рамка"
+                              VerticalAlignment="Center"
+                              Checked="Aluminum_frame_Checked"
+                              Unchecked="Aluminum_frame_Unchecked"
+                              Style="{StaticResource Checked}"/>
+                </Grid>
+                <Grid Grid.Row="4">
+                    <CheckBox x:Name="Glass"
+                              Content="Стекло"
+                              Checked="Glass_Checked"
+                              Unchecked="Glass_Unchecked"
+                              Style="{StaticResource Checked}"/>
+                </Grid>
+                <Grid Grid.Row="5">
+                    <CheckBox x:Name="Tree"
+                              Content="Массив"
+                              Checked="Tree_Checked"
+                              Unchecked="Tree_Unchecked"
+                              Style="{StaticResource Checked}"/>
+                </Grid>
+                <Grid Grid.Row="6">
+                    <CheckBox x:Name="Soft_element"
+                              Content="Мягкий элемент"
+                              Checked="Soft_element_Checked"
+                              Unchecked="Soft_element_Unchecked"
+                              Style="{StaticResource Checked}"/>
+                </Grid>
+                <Grid Grid.Row="7">
+                    <CheckBox x:Name="compartment_doors"
+                              Content="Двери купе"
+                              Checked="compartment_doors_Checked"
+                              Unchecked="compartment_doors_Unchecked"
+                              Style="{StaticResource Checked}"/>
+                </Grid>
+                <Grid Grid.Row="8">
+                    <CheckBox x:Name="metal_frame"
+                              Content="Металлокаркас"
+                              Checked="metal_frame_Checked"
+                              Unchecked="metal_frame_Unchecked"
+                              Style="{StaticResource Checked}"/>
+                </Grid>
+
+                <Grid Grid.Row="9">
+                    <Button Content="Сформировать отчет" 
                             Click="Add_accessories_list"
                             Style="{StaticResource Button}"/>
                 </Grid>

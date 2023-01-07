@@ -9,5 +9,9 @@
         <Setter Property="Control.HorizontalAlignment" Value="Stretch"/>
         <Setter Property="Control.FontSize" Value="15"/>
     </Style>
+    <Style x:Key="Checked">
+        <Setter Property="Control.VerticalAlignment" Value="Center"/>
+        <Setter Property="Control.FontSize" Value="15"/>
+    </Style>
 
 </ResourceDictionary>

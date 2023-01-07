@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:WpfApp1"
         mc:Ignorable="d"
-        Title="Suppliers" Height="450" Width="800" WindowState="Maximized">
+        Title="Фурнитура" Height="450" Width="800" WindowState="Maximized">
     <Grid>
         <Grid.RowDefinitions>
             <RowDefinition Height="85*"/>
@@ -23,10 +23,24 @@
                     <RowDefinition Height="25*"/>
                     <RowDefinition Height="25*"/>
                 </Grid.RowDefinitions>
-                <Button Click="Add_1_item_of_hardware_name" 
+                <Grid Grid.Row="0">
+                    <Button Click="Add_1_item_of_hardware_name" 
                     Style="{StaticResource Button}">
-                    <TextBlock TextWrapping="Wrap">Добавить 1 единицу наименования фурнитуры</TextBlock>
-                </Button>
+                        <TextBlock TextWrapping="Wrap">Добавить 1 единицу наименования фурнитуры</TextBlock>
+                    </Button>
+                </Grid>
+                <Grid Grid.Row="1">
+                    <Button Click="Download_list_suppliers" 
+                    Style="{StaticResource Button}">
+                        <TextBlock TextWrapping="Wrap">Добавить список наименований фурнитуры</TextBlock>
+                    </Button>
+                </Grid>
+                <Grid Grid.Row="2">
+                    <Button Click="Update_hardware_list" 
+                    Style="{StaticResource Button}">
+                        <TextBlock TextWrapping="Wrap">Обнавить список наименований фурнитуры</TextBlock>
+                    </Button>
+                </Grid>
             </Grid>
             <Grid Grid.Column="1">
                 <DataGrid Name ="ListOrder" 
@@ -67,7 +81,10 @@
                 <ColumnDefinition Width="33*"/>
             </Grid.ColumnDefinitions>
             <Grid Grid.Column="0">
-                
+                <Image Source="/Image/logo.jpg" 
+                       VerticalAlignment="Center" 
+                       HorizontalAlignment="Center"/>
+
             </Grid>
             <Grid Grid.Column="1">
                 <Button Click="Ok" 
@@ -76,7 +93,10 @@
                 </Button>
             </Grid>
             <Grid Grid.Column="2">
-                
+                <Button Click="Cancel" 
+                    Style="{StaticResource Button}">
+                    <TextBlock TextWrapping="Wrap">Назад</TextBlock>
+                </Button>
             </Grid>
         </Grid>
     </Grid>

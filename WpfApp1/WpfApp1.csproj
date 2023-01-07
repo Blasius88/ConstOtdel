@@ -62,8 +62,9 @@
     <Compile Include="AddOneSuppliers.xaml.cs">
       <DependentUpon>AddOneSuppliers.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Suppliers.xaml.cs">
-      <DependentUpon>Suppliers.xaml</DependentUpon>
+    <Compile Include="Class\Suppliers.cs" />
+    <Compile Include="SuppliersWindow.xaml.cs">
+      <DependentUpon>SuppliersWindow.xaml</DependentUpon>
     </Compile>
     <Page Include="AddOneSuppliers.xaml">
       <SubType>Designer</SubType>
@@ -89,7 +90,7 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>
-    <Page Include="Suppliers.xaml">
+    <Page Include="SuppliersWindow.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -124,6 +125,10 @@
   </ItemGroup>
   <ItemGroup>
     <Resource Include="Excep\ExepLog.txt" />
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <Resource Include="Image\logo.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

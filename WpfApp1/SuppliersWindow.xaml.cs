@@ -38,7 +38,7 @@ namespace WpfApp1
         }
 
         /// <summary>
-        /// Дфобавления списка фурнитуры в бд
+        /// Добавления списка фурнитуры в бд
         /// </summary>
         /// <param name="sender"></param>
         /// <param name="e"></param>
@@ -54,6 +54,17 @@ namespace WpfApp1
             }
 
         }
+
+        /// <summary>
+        /// Обновить список фурнитуры 
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void Update_hardware_list(object sender, RoutedEventArgs e)
+        {
+            
+        }
+
 
         /// <summary>
         /// Нажатие клавиши Ок
