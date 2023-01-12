@@ -4,6 +4,9 @@ using System.Text;
 
 namespace WpfApp1
 {
+    /// <summary>
+    /// класс фурнитуры от базис  мебельщик 
+    /// </summary>
    public class Accessories
     {
 

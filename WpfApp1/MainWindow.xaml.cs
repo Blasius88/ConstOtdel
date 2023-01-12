@@ -44,9 +44,6 @@ namespace WpfApp1
                     ListOrder.ItemsSource = list_accessories;
                 }
             }
-
-
-
         }
 
         /// <summary>
@@ -58,8 +55,6 @@ namespace WpfApp1
         {
             Suppliers suppliers = new Suppliers();
             suppliers.Show();
-
-            
         }
 
         private void MenuItem_Click_download_order(object sender, RoutedEventArgs e)

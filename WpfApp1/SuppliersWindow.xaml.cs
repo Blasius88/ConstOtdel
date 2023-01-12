@@ -11,7 +11,7 @@ using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
-using static WpfApp1.Hardware_Suppliers;
+using static WpfApp1.Hardware;
 
 
 namespace WpfApp1
@@ -45,14 +45,23 @@ namespace WpfApp1
         private void Download_list_suppliers(object sender, RoutedEventArgs e)
         {
             DownloadFiles.Downloud_Hardware_Suppliers(Convert.ToString(OpenFile.Open_File()));
-            if (list_hardware_s.Count != 0)
+            if (list_hardware.Count != 0)
             {
-                for (int i = 0; i <= list_hardware_s.Count; i++)
+               // PB1.Value = 0;
+                for (int i = 0; i <= list_hardware.Count; i++)
                 {
-                    ListOrder.ItemsSource = list_hardware_s;
+                    ListOrder.ItemsSource = list_hardware;
+                   // PB1.Value = Progress_Bar(Convert.ToDouble(i), Convert.ToDouble(list_hardware.Count));
+
                 }
             }
 
+        }
+
+
+        public static double Progress_Bar(double min, double max)
+        {
+            return (100 * min / max);
         }
 
         /// <summary>

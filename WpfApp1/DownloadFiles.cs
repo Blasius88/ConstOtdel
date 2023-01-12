@@ -1,9 +1,11 @@
 ﻿using System;
 using static WpfApp1.Accessories;
-using static WpfApp1.Hardware_Suppliers;
+using static WpfApp1.Hardware;
+using static WpfApp1.Suppliers_Hadware;
 using Excel = Microsoft.Office.Interop.Excel;
 using System.Windows;
 using Microsoft.Office.Interop.Excel;
+using System.Threading;
 
 namespace WpfApp1
 {
@@ -24,32 +26,35 @@ namespace WpfApp1
 
             try
             {
-                //открывоет книгу excel 
-                excelApp = new Excel.Application();
-                workBook = excelApp.Workbooks.Open(ExcelFilePath);
-                workSheet = (Worksheet)workBook.Worksheets.get_Item(1);
-                range = workSheet.UsedRange;
-                for (int cCnt = 1; cCnt <= range.Rows.Count; cCnt++)
+                if (ExcelFilePath != "")
                 {
-                    if (Convert.ToString(workSheet.Cells[cCnt, 1].Value) == "Спецификация на фурнитуру, покупные изделия")
+                    //открывоет книгу excel 
+                    excelApp = new Excel.Application();
+                    workBook = excelApp.Workbooks.Open(ExcelFilePath);
+                    workSheet = (Worksheet)workBook.Worksheets.get_Item(1);
+                    range = workSheet.UsedRange;
+                    for (int cCnt = 1; cCnt <= range.Rows.Count; cCnt++)
                     {
-                        for (int cCnt1 = cCnt + 2; cCnt1 <= range.Rows.Count; cCnt1++)
+                        if (Convert.ToString(workSheet.Cells[cCnt, 1].Value) == "Спецификация на фурнитуру, покупные изделия")
                         {
-                            if (Convert.ToString(workSheet.Cells[cCnt1, 2].Value) != "")
+                            for (int cCnt1 = cCnt + 2; cCnt1 <= range.Rows.Count; cCnt1++)
                             {
-                                Accessories accessories = new Accessories
+                                if (Convert.ToString(workSheet.Cells[cCnt1, 2].Value) != "")
                                 {
-                                    Name = Convert.ToString(workSheet.Cells[cCnt1, 2].Value),
-                                    Quantity = Convert.ToString(workSheet.Cells[cCnt1, 3].Value),
-                                };
-                                list_accessories.Add(accessories);
+                                    Accessories accessories = new Accessories
+                                    {
+                                        Name = Convert.ToString(workSheet.Cells[cCnt1, 2].Value),
+                                        Quantity = Convert.ToString(workSheet.Cells[cCnt1, 3].Value),
+                                    };
+                                    list_accessories.Add(accessories);
+                                }
                             }
+                            find = true;
                         }
-                        find = true;
                     }
+                    if (!find)
+                        MessageBox.Show("not found");
                 }
-                if (!find)
-                    MessageBox.Show("not found");
             }
             catch (Exception exp)
             {
@@ -58,8 +63,11 @@ namespace WpfApp1
             }
             finally
             {
-                workBook.Close();
-                excelApp.Quit();
+                if (ExcelFilePath != "")
+                {
+                    workBook.Close();
+                    excelApp.Quit();
+                }
             }
         }
 
@@ -69,35 +77,50 @@ namespace WpfApp1
         /// <param name="excel_file_path"></param> 
         public static void Downloud_Hardware_Suppliers(string excel_file_path)
         {
-            int a = 0;
             bool find = false;
             try
             {
-                excelApp = new Excel.Application();
-                workBook = excelApp.Workbooks.Open(excel_file_path);
-                workSheet = (Worksheet)workBook.Worksheets.get_Item(1);
-                range = workSheet.UsedRange;
-                for (int cCnt = 1; cCnt <= range.Rows.Count; cCnt++)
+                if (excel_file_path != "")
                 {
-                    if (Convert.ToString(workSheet.Cells[cCnt, 1].Value) != "" || Convert.ToString(workSheet.Cells[cCnt, 1].Value) != null)
+                    excelApp = new Excel.Application();
+                    workBook = excelApp.Workbooks.Open(excel_file_path);
+                    workSheet = (Worksheet)workBook.Worksheets.get_Item(1);
+                    range = workSheet.UsedRange;
+                    for (int cCnt = 1; cCnt <= range.Rows.Count; cCnt++)
                     {
-                        Hardware_Suppliers suppliers = new Hardware_Suppliers
+                        string str = Convert.ToString(workSheet.Cells[cCnt, 1].Value);
+                        if (str != "" && 
+                            str != null)
                         {
-                            Supplier_Name = Convert.ToString(workSheet.Cells[cCnt, 1].Value),
-                            Hardware_Name = Convert.ToString(workSheet.Cells[cCnt, 2].Value),
-                        };
-                        if (Convert.ToString(suppliers.Hardware_Name) != null)
-                        { 
-                            list_hardware_s.Add(suppliers);
-                            a++;
+                            if (check_name_suppliers_hardwre.Check(Convert.ToString(workSheet.Cells[cCnt, 1].Value)))
+                            {
+                                Suppliers_Hadware suppliers_Hadware = new Suppliers_Hadware
+                                {
+                                    ID = cCnt,
+                                    Name = Convert.ToString(workSheet.Cells[cCnt, 1].Value)
+                                };
+
+                                if (Convert.ToString(suppliers_Hadware.Name) != "")
+                                {
+                                    list_suppliers_hardware.Add(suppliers_Hadware);
+                                }
+                            }
+                            Hardware hardware = new Hardware
+                            {
+                                Supplier_Name = Convert.ToInt16(Supplier_availability_check.Check(workSheet.Cells[cCnt, 1].Value)),
+                                Hardware_Name = Convert.ToString(workSheet.Cells[cCnt, 2].Value),
+                                Description = Convert.ToString(workSheet.Cells[cCnt, 3].Value),
+                                Color = Convert.ToString(workSheet.Cells[cCnt, 4].Value)
+                            };
+                            list_hardware.Add(hardware);
+                            find = true;
                         }
                     }
-                    find = true;
+                    if (!find)
+                        MessageBox.Show("произошла ошибка. Фурнитура не найдена");
+                    else
+                        MessageBox.Show("загрузка завершена");
                 }
-                if (!find)
-                    MessageBox.Show("not found");
-                else
-                    MessageBox.Show("found " + a);
             }
             catch (Exception exp)
             {
@@ -106,8 +129,11 @@ namespace WpfApp1
             }
             finally
             {
-                workBook.Close();
-                excelApp.Quit();
+                if (excel_file_path != "")
+                {
+                    workBook.Close();
+                    excelApp.Quit();
+                }
             }
         }
     }

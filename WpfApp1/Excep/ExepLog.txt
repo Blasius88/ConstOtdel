@@ -80,3 +80,32 @@ File name: 'office, Version=15.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111
    в WpfApp1.DownloadFiles.Downloud_Hardware_Suppliers(String excel_file_path) в D:\программирование\WPF\Program Files\ComstrOtdelWPF\WpfApp1\WpfApp1\DownloadFiles.cs:строка 87| 05.01.2023 00:00:53| 
 80| System.NullReferenceException: Ссылка на объект не указывает на экземпляр объекта.
    в WpfApp1.DownloadFiles.Downloud_Hardware_Suppliers(String excel_file_path) в D:\программирование\WPF\Program Files\ComstrOtdelWPF\WpfApp1\WpfApp1\DownloadFiles.cs:строка 88| 05.01.2023 00:49:19| 
+82| Microsoft.CSharp.RuntimeBinder.RuntimeBinderException: Cannot convert null to "int" because it is a non-nullable value type
+   в CallSite.Target(Closure , CallSite , Object )
+   в System.Dynamic.UpdateDelegates.UpdateAndExecute1[T0,TRet](CallSite site, T0 arg0)
+   в WpfApp1.DownloadFiles.Downloud_Hardware_Suppliers(String excel_file_path) в D:\программирование\WPF\Program Files\ComstrOtdelWPF\WpfApp1\WpfApp1\DownloadFiles.cs:строка 99| 11.01.2023 22:41:04| 
+86| System.Runtime.InteropServices.COMException (0x800A03EC): К сожалению, нам не удалось найти файл . Возможно, он был перемещен, переименован или удален?
+   в Microsoft.Office.Interop.Excel.Workbooks.Open(String Filename, Object UpdateLinks, Object ReadOnly, Object Format, Object Password, Object WriteResPassword, Object IgnoreReadOnlyRecommended, Object Origin, Object Delimiter, Object Editable, Object Notify, Object Converter, Object AddToMru, Object Local, Object CorruptLoad)
+   в WpfApp1.DownloadFiles.Downloud_Hardware_Suppliers(String excel_file_path) в D:\программирование\WPF\Program Files\ComstrOtdelWPF\WpfApp1\WpfApp1\DownloadFiles.cs:строка 78| 11.01.2023 23:52:25| 
+89| System.Runtime.InteropServices.COMException (0x800A03EC): К сожалению, нам не удалось найти файл . Возможно, он был перемещен, переименован или удален?
+   в Microsoft.Office.Interop.Excel.Workbooks.Open(String Filename, Object UpdateLinks, Object ReadOnly, Object Format, Object Password, Object WriteResPassword, Object IgnoreReadOnlyRecommended, Object Origin, Object Delimiter, Object Editable, Object Notify, Object Converter, Object AddToMru, Object Local, Object CorruptLoad)
+   в WpfApp1.DownloadFiles.Downloud_Hardware_Suppliers(String excel_file_path) в D:\программирование\WPF\Program Files\ComstrOtdelWPF\WpfApp1\WpfApp1\DownloadFiles.cs:строка 80| 11.01.2023 23:55:39| 
+92| Microsoft.CSharp.RuntimeBinder.RuntimeBinderException: Не удается неявно преобразовать тип "string" в "int"
+   в CallSite.Target(Closure , CallSite , Object )
+   в System.Dynamic.UpdateDelegates.UpdateAndExecute1[T0,TRet](CallSite site, T0 arg0)
+   в WpfApp1.DownloadFiles.Downloud_Hardware_Suppliers(String excel_file_path) в D:\программирование\WPF\Program Files\ComstrOtdelWPF\WpfApp1\WpfApp1\DownloadFiles.cs:строка 109| 12.01.2023 23:00:52| 
+96| Microsoft.CSharp.RuntimeBinder.RuntimeBinderException: Наиболее подходящий перегруженный метод для "WpfApp1.Supplier_availability_check.Check(string)" имеет несколько недопустимых аргументов
+   в CallSite.Target(Closure , CallSite , Type , Object )
+   в System.Dynamic.UpdateDelegates.UpdateAndExecute2[T0,T1,TRet](CallSite site, T0 arg0, T1 arg1)
+   в CallSite.Target(Closure , CallSite , Type , Object )
+   в WpfApp1.DownloadFiles.Downloud_Hardware_Suppliers(String excel_file_path) в D:\программирование\WPF\Program Files\ComstrOtdelWPF\WpfApp1\WpfApp1\DownloadFiles.cs:строка 111| 13.01.2023 00:26:04| 
+101| Microsoft.CSharp.RuntimeBinder.RuntimeBinderException: Наиболее подходящий перегруженный метод для "WpfApp1.Supplier_availability_check.Check(string)" имеет несколько недопустимых аргументов
+   в CallSite.Target(Closure , CallSite , Type , Object )
+   в System.Dynamic.UpdateDelegates.UpdateAndExecute2[T0,T1,TRet](CallSite site, T0 arg0, T1 arg1)
+   в CallSite.Target(Closure , CallSite , Type , Object )
+   в WpfApp1.DownloadFiles.Downloud_Hardware_Suppliers(String excel_file_path) в D:\программирование\WPF\Program Files\ComstrOtdelWPF\WpfApp1\WpfApp1\DownloadFiles.cs:строка 111| 13.01.2023 00:29:49| 
+106| Microsoft.CSharp.RuntimeBinder.RuntimeBinderException: Наиболее подходящий перегруженный метод для "WpfApp1.Supplier_availability_check.Check(string)" имеет несколько недопустимых аргументов
+   в CallSite.Target(Closure , CallSite , Type , Object )
+   в System.Dynamic.UpdateDelegates.UpdateAndExecute2[T0,T1,TRet](CallSite site, T0 arg0, T1 arg1)
+   в CallSite.Target(Closure , CallSite , Type , Object )
+   в WpfApp1.DownloadFiles.Downloud_Hardware_Suppliers(String excel_file_path) в D:\программирование\WPF\Program Files\ComstrOtdelWPF\WpfApp1\WpfApp1\DownloadFiles.cs:строка 111| 13.01.2023 00:31:58| 
