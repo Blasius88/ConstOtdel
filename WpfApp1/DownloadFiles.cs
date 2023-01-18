@@ -92,14 +92,14 @@ namespace WpfApp1
                         if (str != "" && 
                             str != null)
                         {
-                            if (check_name_suppliers_hardwre.Check(Convert.ToString(workSheet.Cells[cCnt, 1].Value)))
+                            //проверка поставщика и запись его ID 
+                            if (Сheck_name_suppliers_hardwre.Check(Convert.ToString(workSheet.Cells[cCnt, 1].Value)))
                             {
                                 Suppliers_Hadware suppliers_Hadware = new Suppliers_Hadware
                                 {
-                                    ID = cCnt,
+                                    ID = cCnt, // записывает не правильный ID ( пишет номер строчки ) 
                                     Name = Convert.ToString(workSheet.Cells[cCnt, 1].Value)
                                 };
-
                                 if (Convert.ToString(suppliers_Hadware.Name) != "")
                                 {
                                     list_suppliers_hardware.Add(suppliers_Hadware);

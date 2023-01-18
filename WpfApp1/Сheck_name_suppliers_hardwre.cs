@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace WpfApp1
 {
-    public class check_name_suppliers_hardwre
+    public class Сheck_name_suppliers_hardwre
     {
         /// <summary>
         /// проверяем наличие поставщиков в списке (для избежания повторов)

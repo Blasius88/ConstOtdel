@@ -51,7 +51,8 @@ namespace WpfApp1
                 for (int i = 0; i <= list_hardware.Count; i++)
                 {
                     ListOrder.ItemsSource = list_hardware;
-                   // PB1.Value = Progress_Bar(Convert.ToDouble(i), Convert.ToDouble(list_hardware.Count));
+                    // PB1.Value = Progress_Bar(Convert.ToDouble(i), Convert.ToDouble(list_hardware.Count));
+                                   
 
                 }
             }
