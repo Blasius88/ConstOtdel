@@ -63,7 +63,9 @@
                               IsReadOnly="False"
                               VerticalAlignment="Center"
                               HorizontalAlignment="Center"
-                              MinWidth="250"/>
+                              MinWidth="250"
+                              ItemsSource="{Binding Path=Name}">
+                    </ComboBox>
                 </Grid>
                 <Grid Grid.Row="1">
                     <TextBox x:Name="name_hardware"

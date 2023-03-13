@@ -27,5 +27,31 @@ namespace WpfApp1
             return check;
         }
 
+
+        public static string Found_Name(string name)
+        {
+            string str = "";
+            foreach (var s in list_suppliers_hardware)
+            {
+                if (s.Name == name)
+                {
+                    str = s.Name;
+                }
+            }
+            return str;
+        }
+
+        public static int Found_ID_Name(string name)
+        {
+            int a = - 1;
+            foreach (var s in list_suppliers_hardware)
+            {
+                if (s.Name == name)
+                {
+                    a = s.ID;
+                }
+            }
+            return a;
+        }
     }
 }

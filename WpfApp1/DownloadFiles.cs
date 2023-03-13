@@ -97,7 +97,7 @@ namespace WpfApp1
                             {
                                 Suppliers_Hadware suppliers_Hadware = new Suppliers_Hadware
                                 {
-                                    ID = cCnt, // записывает не правильный ID ( пишет номер строчки ) 
+                                    ID = list_suppliers_hardware.Count + 1,
                                     Name = Convert.ToString(workSheet.Cells[cCnt, 1].Value)
                                 };
                                 if (Convert.ToString(suppliers_Hadware.Name) != "")
@@ -107,7 +107,9 @@ namespace WpfApp1
                             }
                             Hardware hardware = new Hardware
                             {
-                                Supplier_Name = Convert.ToInt16(Supplier_availability_check.Check(workSheet.Cells[cCnt, 1].Value)),
+                                ID = list_hardware.Count + 1,
+                                ID_Supplier_Name = Convert.ToInt32(Сheck_name_suppliers_hardwre.Found_ID_Name(workSheet.Cells[cCnt, 1].Value)),
+                                Supplier_Name = Convert.ToString(Сheck_name_suppliers_hardwre.Found_Name(workSheet.Cells[cCnt, 1].Value)),
                                 Hardware_Name = Convert.ToString(workSheet.Cells[cCnt, 2].Value),
                                 Description = Convert.ToString(workSheet.Cells[cCnt, 3].Value),
                                 Color = Convert.ToString(workSheet.Cells[cCnt, 4].Value)
@@ -136,5 +138,6 @@ namespace WpfApp1
                 }
             }
         }
+
     }
 }

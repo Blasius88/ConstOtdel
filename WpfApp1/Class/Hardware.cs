@@ -20,7 +20,12 @@ namespace WpfApp1
         /// <summary>
         /// id поcтавщика 
         /// </summary>
-        public int Supplier_Name { get; set; }  // название поставщика 
+        public int ID_Supplier_Name { get; set; }  // название поставщика 
+
+        /// <summary>
+        /// имя поcтавщика 
+        /// </summary>
+        public string Supplier_Name { get; set; }  // название поставщика 
 
         /// <summary>
         /// название фурнитуры 

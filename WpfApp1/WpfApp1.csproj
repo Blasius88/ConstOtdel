@@ -67,7 +67,6 @@
     <Compile Include="SuppliersWindow.xaml.cs">
       <DependentUpon>SuppliersWindow.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Supplier_availability_check.cs" />
     <Page Include="AddOneSuppliers.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>

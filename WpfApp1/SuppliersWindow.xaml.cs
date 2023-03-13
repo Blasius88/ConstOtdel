@@ -47,24 +47,14 @@ namespace WpfApp1
             DownloadFiles.Downloud_Hardware_Suppliers(Convert.ToString(OpenFile.Open_File()));
             if (list_hardware.Count != 0)
             {
-               // PB1.Value = 0;
                 for (int i = 0; i <= list_hardware.Count; i++)
                 {
                     ListOrder.ItemsSource = list_hardware;
-                    // PB1.Value = Progress_Bar(Convert.ToDouble(i), Convert.ToDouble(list_hardware.Count));
-                                   
-
                 }
             }
 
         }
-
-
-        public static double Progress_Bar(double min, double max)
-        {
-            return (100 * min / max);
-        }
-
+       
         /// <summary>
         /// Обновить список фурнитуры 
         /// </summary>
@@ -74,7 +64,6 @@ namespace WpfApp1
         {
             
         }
-
 
         /// <summary>
         /// Нажатие клавиши Ок
