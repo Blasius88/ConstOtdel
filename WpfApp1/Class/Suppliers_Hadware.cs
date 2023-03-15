@@ -20,12 +20,6 @@ namespace WpfApp1
         /// Название постовщика 
         /// </summary>
         public string Name { get; set; }
- 
-        //public Suppliers_Hadware(int ID, string Name)
-        //{
-        //    this.ID = ID;
-        //    this.Name = Name;
-        //}
 
         /// <summary>
         /// Список поставщиков 

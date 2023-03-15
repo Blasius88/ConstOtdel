@@ -52,7 +52,6 @@ namespace WpfApp1
                     ListOrder.ItemsSource = list_hardware;
                 }
             }
-
         }
        
         /// <summary>

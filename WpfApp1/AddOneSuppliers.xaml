@@ -59,12 +59,10 @@
                 </Grid.RowDefinitions>
                 <Grid Grid.Row="0">
                     <ComboBox x:Name="the_suppler"
-                              IsEditable="True"
-                              IsReadOnly="False"
+                              ItemsSource="{Binding}"
                               VerticalAlignment="Center"
                               HorizontalAlignment="Center"
-                              MinWidth="250"
-                              ItemsSource="{Binding Path=Name}">
+                              MinWidth="250">
                     </ComboBox>
                 </Grid>
                 <Grid Grid.Row="1">

@@ -49,7 +49,7 @@
                               AlternatingRowBackground="White" 
                               HorizontalAlignment="Stretch" VerticalAlignment="Stretch"
                               Margin="10"
-                               RowHeaderWidth="50"
+                              RowHeaderWidth="50"
                               AutoGenerateColumns="False">
                     <DataGrid.ContextMenu>
                         <ContextMenu>

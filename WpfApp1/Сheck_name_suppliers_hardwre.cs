@@ -28,6 +28,11 @@ namespace WpfApp1
         }
 
 
+        /// <summary>
+        /// поиск имени в list_suppliers_hardware
+        /// </summary>
+        /// <param name="name"></param>
+        /// <returns></returns>
         public static string Found_Name(string name)
         {
             string str = "";

@@ -25,9 +25,10 @@ namespace WpfApp1
         public AddOneSuppliers()
         {
             InitializeComponent();
-            foreach (var s in Hardware.list_hardware)
+            foreach (var s in list_suppliers_hardware)
             {
-                the_suppler.ItemsSource = s.Supplier_Name.ToString();
+                the_suppler.ItemsSource = Convert.ToString(s.Name);
+                Console.WriteLine(Convert.ToString(s.Name));
             }
         }
 
