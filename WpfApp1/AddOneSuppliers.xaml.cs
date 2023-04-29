@@ -25,11 +25,7 @@ namespace WpfApp1
         public AddOneSuppliers()
         {
             InitializeComponent();
-            foreach (var s in list_suppliers_hardware)
-            {
-                the_suppler.ItemsSource = Convert.ToString(s.Name);
-                Console.WriteLine(Convert.ToString(s.Name));
-            }
+            //    the_suppler.ItemsSource = Suppliers_Hadware.list_suppliers_hardware.ToArray(Name);
         }
 
         /// <summary>
@@ -48,7 +44,7 @@ namespace WpfApp1
                     str = s.Supplier_Name.ToString();
                 }
             }
-                File.WriteAllText(saveFileDialog.FileName, str);
+            File.WriteAllText(saveFileDialog.FileName, str);
         }
 
         /// <summary>
