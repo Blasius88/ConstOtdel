@@ -62,102 +62,217 @@ namespace WpfApp1
 
         }
 
+        /// <summary>
+        /// Сформировать отчет  
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void Add_accessories_list(object sender, RoutedEventArgs e)
         {
 
         }
 
+        /// <summary>
+        /// чекбок фурнитура выбран 
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void Hardware_Checked(object sender, RoutedEventArgs e)
         {
 
         }
 
+        /// <summary>
+        /// чекбокс фурнитура не выбран 
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void Hardware_Unchecked(object sender, RoutedEventArgs e)
         {
 
         }
 
+        /// <summary>
+        /// выбрана краска 
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void Dye_Checked(object sender, RoutedEventArgs e)
         {
 
         }
 
+        /// <summary>
+        /// краска не выбрана 
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void Dye_Unchecked(object sender, RoutedEventArgs e)
         {
 
         }
 
+        /// <summary>
+        /// шпон выбран 
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void Veneer_Checked(object sender, RoutedEventArgs e)
         {
 
         }
 
+        /// <summary>
+        /// шпон не выбран  
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void Veneer_Unchecked(object sender, RoutedEventArgs e)
         {
 
         }
 
+        /// <summary>
+        /// Чекбокс ал рамки выбран 
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void Aluminum_frame_Checked(object sender, RoutedEventArgs e)
         {
 
         }
 
+        /// <summary>
+        /// Чекбокс алюминевые рамкы не выбран 
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void Aluminum_frame_Unchecked(object sender, RoutedEventArgs e)
         {
 
         }
 
+        /// <summary>
+        /// Чекбокс стекло выбран 
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void Glass_Checked(object sender, RoutedEventArgs e)
         {
 
         }
 
+        /// <summary>
+        /// Чекбокс стекло не выбран 
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void Glass_Unchecked(object sender, RoutedEventArgs e)
         {
 
         }
 
+        /// <summary>
+        /// Чекбокс массив выбран 
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void Tree_Checked(object sender, RoutedEventArgs e)
         {
 
         }
 
+        /// <summary>
+        /// Чекбокс чассив выбран
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void Tree_Unchecked(object sender, RoutedEventArgs e)
         {
 
         }
 
+        /// <summary>
+        /// Чекбокс мягкий элемент выбран  
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void Soft_element_Checked(object sender, RoutedEventArgs e)
         {
 
         }
 
+        /// <summary>
+        /// Чекбокс мягкии элемент не выбран  
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void Soft_element_Unchecked(object sender, RoutedEventArgs e)
         {
 
         }
 
+        /// <summary>
+        /// чекбокс двери купе выбран  
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void compartment_doors_Checked(object sender, RoutedEventArgs e)
         {
 
         }
 
+        /// <summary>
+        /// чекбокс двери купе не выбран  
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void compartment_doors_Unchecked(object sender, RoutedEventArgs e)
         {
 
         }
 
+        /// <summary>
+        /// Чекбокс Металл выбран
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void metal_frame_Checked(object sender, RoutedEventArgs e)
         {
 
         }
 
+        /// <summary>
+        /// Чекбок метал не выбран 
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void metal_frame_Unchecked(object sender, RoutedEventArgs e)
         {
 
         }
 
         private void MenuItem_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+        
+        /// <summary>
+        /// подменю в дата грид изменить имя в фуритуре 
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void MenuItem_Click_Edit(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        /// <summary>
+        /// поддменю в датагрид  удалить фурнитуру 
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void MenuItem_Click_Delete(object sender, RoutedEventArgs e)
         {
 
         }

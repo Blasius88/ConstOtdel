@@ -1,14 +1,19 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel;
 using System.Text;
 
 namespace WpfApp1
 {
     /// <summary>
-    /// класс фурнитуры от базис  мебельщик 
+    /// класс фурнитуры от базис мебельщик 
     /// </summary>
    public class Accessories
     {
+        /// <summary>
+        /// id фурнитуры с базис мебельщика 
+        /// </summary>
+        public int ID { get; set; }
 
         /// <summary>
         /// Наименование 

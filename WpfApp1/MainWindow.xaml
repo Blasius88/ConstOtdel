@@ -165,6 +165,12 @@
                               Margin="10"
                               RowHeaderWidth="50"
                               AutoGenerateColumns="False">
+                    <DataGrid.ContextMenu>
+                        <ContextMenu>
+                            <MenuItem Header="Изменить" Click="MenuItem_Click_Edit"/>
+                            <MenuItem Header="Удалить" Click="MenuItem_Click_Delete"/>
+                        </ContextMenu>
+                    </DataGrid.ContextMenu>
                     <DataGrid.Columns>
                         <DataGridTextColumn Header="Наименование" 
                                     Binding="{Binding Path=Name}"
